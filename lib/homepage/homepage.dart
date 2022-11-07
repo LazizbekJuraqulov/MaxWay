@@ -44,6 +44,7 @@ class _HomePageState extends State<HomePage> {
     "Десерт"
   ];
   bool clor=true;
+   var summa;
 
   bool isTrue = false;
   List pages = [];
@@ -52,6 +53,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     activBar = 0;
     kup = 1;
+    narx=2500;
 
     isFalse = List.generate(list2.length, (index) => true);
     setState(() {});
@@ -334,7 +336,7 @@ class _HomePageState extends State<HomePage> {
               style: TextStyle(fontSize: 20),
             ),
             Text(
-              "${narx * kup} сум ",
+              "${summa} сум ",
               style: TextStyle(fontSize: 20),
             ),
           ],
@@ -356,8 +358,12 @@ class _HomePageState extends State<HomePage> {
                   borderRadius: BorderRadius.circular(10.0)),
               minimumSize: Size(40, 40),
             ),
+
+            
             onPressed: () {
+               summa=(narx*list4[index])-narx;
               list4[index]--;
+              
               isTrue = !isTrue;
               if (list4[index] < 1) {
                 list5[index] = !list5[index];
@@ -389,6 +395,7 @@ class _HomePageState extends State<HomePage> {
               minimumSize: const Size(40, 40),
             ),
             onPressed: () {
+               summa=narx*kup;
               clor=!clor;
               list4[index]++;
               kup = list4[index];
