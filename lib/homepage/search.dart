@@ -14,7 +14,7 @@ class _SerchPageState extends State<SerchPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       
-      backgroundColor: Color.fromARGB(255, 243, 241, 241),
+      backgroundColor: Color(0xffDFDFDF),
       appBar: AppBar(
         iconTheme: IconThemeData(color: Colors.black),
         elevation: 0,

@@ -13,7 +13,7 @@ class _BurgerPageState extends State<BurgerPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-         backgroundColor: const Color.fromARGB(255, 246, 213, 252),
+         backgroundColor: Color(0xffDFDFDF),
       appBar: AppBar(
         iconTheme: const IconThemeData(color: Colors.black),
         backgroundColor: Colors.white,

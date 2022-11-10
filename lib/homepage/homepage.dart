@@ -24,8 +24,7 @@ class _HomePageState extends State<HomePage> {
     "assets/rasmlar/1.jpg",
     "assets/rasmlar/2.jpg",
     "assets/rasmlar/3.jpg",
-    "assets/rasmlar/4.jpg",
-    "assets/rasmlar/5.jpg"
+   
   ];
   List list1 = ["Максим бокс", "Донар блюдо", "Хот дог"];
   List list2 = [
@@ -64,7 +63,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 243, 241, 241),
+      backgroundColor: Color(0xffDFDFDF),
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.white,
@@ -419,7 +418,7 @@ class _HomePageState extends State<HomePage> {
       padding: EdgeInsets.all(10),
       margin: EdgeInsets.all(10),
       decoration: BoxDecoration(
-          color: Color.fromARGB(255, 194, 187, 186),
+          color: Color(0xffE7E9E8),
           borderRadius: BorderRadius.circular(10)),
       child: Text(
         narxi,

@@ -28,43 +28,45 @@ class _RedaktorPageState extends State<RedaktorPage> {
         title: Text("Редакторовать профиль",style: TextStyle(color: Colors.black),),
         centerTitle: true,
       ),
-      body: Container(
-        padding: EdgeInsets.all(10),
-        child:Column(
-         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          textFunc("Имя"),
-             const SizedBox(height: 5,),
-          formFunc("Ввидети имя"),
-          const SizedBox(height: 15,),
-          textFunc("Фамилия"),
-          const SizedBox(height: 5,),
-          formFunc("Ввидети Фамилия"),
-          const SizedBox(height: 15,),
-          textFunc("Телфон номер"),
-          const SizedBox(height: 5,),
-          formFunc("Ввидети номер"),
-          const SizedBox(height: 15,),
-          textFunc("Ваш дата рождения"),
-          formFunc("дата рождения"),
-          SizedBox(height: 240,),
-          InkWell(
-            child: Container(
-              width: MediaQuery.of(context).size.width * 0.96,
-              height: MediaQuery.of(context).size.height*0.06,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Color.fromARGB(255, 78, 19, 88)),
-              child: Text("Подтвердить",style: TextStyle(fontSize: 20,color:Colors.white),),
-              ),
-          ),
-
-
-
-
-        ],
-      ) ,),
+      body: SingleChildScrollView(
+        child: Container(
+          padding: EdgeInsets.all(10),
+          child:Column(
+           crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            textFunc("Имя"),
+               const SizedBox(height: 5,),
+            formFunc("Ввидети имя"),
+            const SizedBox(height: 15,),
+            textFunc("Фамилия"),
+            const SizedBox(height: 5,),
+            formFunc("Ввидети Фамилия"),
+            const SizedBox(height: 15,),
+            textFunc("Телфон номер"),
+            const SizedBox(height: 5,),
+            formFunc("Ввидети номер"),
+            const SizedBox(height: 15,),
+            textFunc("Ваш дата рождения"),
+            formFunc("дата рождения"),
+            SizedBox(height: 240,),
+            InkWell(
+              child: Container(
+                width: MediaQuery.of(context).size.width * 0.96,
+                height: MediaQuery.of(context).size.height*0.06,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Color.fromARGB(255, 78, 19, 88)),
+                child: Text("Подтвердить",style: TextStyle(fontSize: 20,color:Colors.white),),
+                ),
+            ),
+      
+      
+      
+      
+          ],
+        ) ,),
+      ),
     );
     
   }
@@ -84,7 +86,7 @@ class _RedaktorPageState extends State<RedaktorPage> {
           }
         },
         onChanged: (value) {},
-        keyboardType: TextInputType.phone,
+       
         style: const TextStyle(fontSize: 16, color: Colors.black),
         decoration:  InputDecoration(
          hintText: suz,

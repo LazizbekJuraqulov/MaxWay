@@ -22,7 +22,7 @@ class _KozinkaPageState extends State<KozinkaPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 246, 213, 252),
+      backgroundColor: Color(0xffDFDFDF),
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
